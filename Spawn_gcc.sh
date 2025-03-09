@@ -1,5 +1,5 @@
 for url in https://ftp.gnu.org/gnu/gcc/gcc-14.2.0/gcc-14.2.0.tar.gz https://mirrors.kernel.org/gnu/gcc/gcc-14.2.0/gcc-14.2.0.tar.gz ; do
-    wget --timeout=60 --continue $url && break
+    wget --timeout=60 --continue --no-check-certificate $url && break
 done
 tar xvfz gcc-14.2.0.tar.gz
 cd gcc-14.2.0
